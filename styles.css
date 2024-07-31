@@ -9,6 +9,7 @@ body {
     height: 100vh;
     overflow: auto;
     display: flex;
+    flex-direction: row;
     background-color: var(--site-main-DARK);
 }
 
@@ -17,7 +18,7 @@ h1 {
     font-size: 80px;
 }
 
-h1, p{
+h1, p, li{
     color: var(--site-main-LIGHT);
     font-family: var(--inter);
 }
@@ -51,7 +52,7 @@ h1, p{
     justify-content: space-evenly;
 }
 
-.navbar ul {
+ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -75,7 +76,10 @@ li a {
 li a:hover {
     color: yellow;
 }
-
+.links-container li{
+    padding: 0;
+    margin: 0;
+}
 .typed {
     overflow: hidden;
     white-space: nowrap;
@@ -84,6 +88,40 @@ li a:hover {
     padding: 0;
     animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
     border-right: 4px solid; 
+}
+
+.links-container {
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 20vh;
+}
+
+.links-container hr {
+    width: 100%;
+    color: var(--site-main-LIGHT);
+    height: 3px;
+    background-color: var(--site-main-LIGHT);
+}
+
+.links-container ul {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+}
+
+.links-container li {
+    padding: 25px;
+}
+
+.links-container a {
+    font-size: 50px;
 }
 
 @keyframes typing {
