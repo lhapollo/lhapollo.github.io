@@ -161,7 +161,7 @@ footer{
     align-items: center;
 }
 
-#project-body, .project-container {
+#project-body, #about-body, .project-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
