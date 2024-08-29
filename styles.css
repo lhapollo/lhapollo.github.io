@@ -180,8 +180,8 @@ footer{
 }
 
 .project-image-container {
-    width: 12vw;
-    height: 12vw;
+    width: 230px;
+    height: 230px;
     border: 4px solid white;
     border-radius: 16px;
 }
@@ -194,7 +194,9 @@ footer{
 }
 
 .project-image{
-    width:100%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
     image-rendering: "high-quality";
     border-radius: 10px;
 }
