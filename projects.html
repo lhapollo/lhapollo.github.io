@@ -18,7 +18,8 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  <header>
+  <body id="project-body">
+    <header>
     <div class="navbar-container">
       <ul class="navbar">
         <li><a href="index.html">Home</a></li>
@@ -27,30 +28,14 @@
       </ul>
     </div>
   </header>
-  <body id="project-body">
     <h1 class="title">My Projects</h1>
     <main class="projects-container" id="react-projects-root">
     </main>
+
+    <script type="text/babel" src="./ProjectComponent.js"></script>
+
     <script type="text/babel">
       const { useState, useEffect } = React;
-
-      function Project({ title, image, link, github }) {
-        return (
-          <div className="project-container">
-            <h1 className="project-title">
-              <a href={link} target="_blank">{title}</a>
-            </h1>
-            <div className="project-image-container">
-              <a href={link} target="_blank"><img src={image} className="project-image" /></a>
-            </div>
-            <div className="project-link-container">
-              <ul>
-                <li><a href={github} target="_blank" className="fa fa-github"></a></li>
-              </ul>
-            </div>
-          </div>
-        );
-      }
 
       function App(){
         const [projects, setProjects] = useState([]);
@@ -63,13 +48,13 @@
 
         return (
           <>
-            {projects.map((project, index) => (
+            {projects.length === 0? <p>Loading Projects...</p> : projects.map((project, index) => (
               <Project
                 key={index}
                 title={project.title}
                 image={project.image}
                 link={project.link}
-                github={project.github}w
+                github={project.github}
               />
             ))}
           </>
