@@ -15,18 +15,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body id="about-body">
-    <header>
-    <div class="navbar-container">
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </div>
-  </header>
-    <div class="blurb">
+    <header id="navbar-root">
+    </header>
+    <script type="text/babel" src="./NavbarComponent.js"></script>
+    <script type="text/babel">
+      const { useState, useEffect } = React;
+      function App() {
+        return (
+          <Navbar />
+        );
+      }
+      ReactDOM.render(<App />, document.getElementById('navbar-root'));
+    </script>
+      <div class="blurb">
       <h1 class="typed">About Me</h1>
       <img src="imgs/lexipfp.jpg" class="about-image"></img>
       <div class="blurb-text">

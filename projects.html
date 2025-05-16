@@ -19,15 +19,9 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body id="project-body">
-    <header>
-    <div class="navbar-container">
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </div>
-  </header>
+    <header id="navbar-root">
+    
+    </header>
     <h1 class="title">My Projects</h1>
     <main class="projects-container" id="react-projects-root">
     </main>
@@ -63,6 +57,17 @@
 
       const root = ReactDOM.createRoot(document.getElementById('react-projects-root'));
       root.render(<App />);
+    </script>
+
+    <script type="text/babel" src="./NavbarComponent.js"></script>
+    <script type="text/babel">
+      function App() {
+        return (
+          <Navbar />
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById('navbar-root'));
     </script>
   </body>
 </html>
