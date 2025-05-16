@@ -2,19 +2,19 @@
   {
     "title": "Memory Test",
     "link": "https://verbalmemorytest.netlify.app",
-    "image": "imgs/verbalmemory.png",
+    "image": "../imgs/verbalmemory.png",
     "repo": "https://github.com/lhapollo/VerbalMemory"
   },
   {
     "title": "To Do List",
     "link": "https://lexihan-todolist.netlify.app",
-    "image": "imgs/todolist.png",
+    "image": "../imgs/todolist.png",
     "repo": "https://github.com/lhapollo/VerbalMemory"
   },
   {
     "title": "Odin Calculator",
     "link": "https://lhapollo.github.io/odin-calculator/",
-    "image": "imgs/calculator.png",
+    "image": "../imgs/calculator.png",
     "repo": "https://github.com/lhapollo/odin-calculator"
   }
 ]

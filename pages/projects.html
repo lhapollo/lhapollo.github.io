@@ -4,7 +4,7 @@
     <title>Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +26,7 @@
     <main class="projects-container" id="react-projects-root">
     </main>
 
-    <script type="text/babel" src="./ProjectComponent.js"></script>
+    <script type="text/babel" src="../components/ProjectComponent.js"></script>
 
     <script type="text/babel">
       const { useState, useEffect } = React;
@@ -34,7 +34,7 @@
       function App(){
         const [projects, setProjects] = useState([]);
         useEffect(() => {
-          fetch('./projects.json')
+          fetch('../projects.json')
             .then(response => response.json())
             .then(data => setProjects(data))
             .catch(error => console.error('Error fetching projects:', error));
@@ -59,7 +59,7 @@
       root.render(<App />);
     </script>
 
-    <script type="text/babel" src="./NavbarComponent.js"></script>
+    <script type="text/babel" src="../components/NavbarComponent.js"></script>
     <script type="text/babel">
       function App() {
         return (
