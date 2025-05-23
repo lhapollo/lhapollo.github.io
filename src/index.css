@@ -1,0 +1,26 @@
+:root {
+  --site-main-DARK: #0D1321;
+  --site-main-LIGHT: #F0EBD8;
+  --roboto-mono: "Roboto Mono", monospace;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--site-main-DARK);
+  font-family: var(--roboto-mono);
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1, p, li {
+  color: var(--site-main-LIGHT);
+  font-family: var(--roboto-mono);
+} 
