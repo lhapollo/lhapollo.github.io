@@ -8,6 +8,7 @@ import './App.css'
 import './index.css'
 import './components/Navbar.css'
 import './pages/Home.css'
+import './pages/About.css'
 
 function App() {
   return (

@@ -7,17 +7,15 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  overflow: hidden;
   background-color: var(--site-main-DARK);
   font-family: var(--roboto-mono);
 }
 
 #root {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  overflow: hidden;
 }
 
 h1, p, li {
